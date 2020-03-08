@@ -1,0 +1,432 @@
+    body {
+        /* main body section style definitions */
+        width: auto;
+        height: 100%;
+        border: 2px solid gold;
+        margin-top: 30px;
+        padding: 20px;
+        font-family: Helvetica;
+        background-color: #20262e;
+    }
+    
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-gap: 10px;
+    }
+    
+    li {
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    .info {
+        text-align: center;
+        font-size: 13px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    .title-banner-box {
+        /* holder of banner */
+        height: auto;
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .title-banner-box hr.new4 {
+        /* gold ruled lines for separation of sections */
+        border: 1px solid gold;
+    }
+    
+    .title-banner-box h1 {
+        font-size: 125%;
+        text-shadow: 3px 2px dodgerblue;
+        color: white;
+        text-align: center;
+        font-size: 65px;
+        -ms-text-kashida-space: 3px;
+        /*font-size: 3em;*/
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+    }
+    
+    #banner {
+        height: 80px;
+        width: 100%;
+        z-index: -1;
+        border: 1px solid white;
+        position: relative;
+    }
+    
+    .banner-container {
+        border: 1px solid #000;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1px;
+        margin: 1px 1px 0px 0px;
+    }
+    
+    #panel-visibility-control-group {
+        display: inline-flex;
+        position: absolute;
+        margin-top: auto;
+    }
+    
+    #hide-btn {
+        width: auto;
+        height: auto;
+        /* border-radius: 30px; */
+        border: 2px solid white;
+        background-color: black;
+        content: "Hide";
+        color: white;
+        vertical-align: middle;
+        display: inline-flex;
+        position: inline-end;
+        margin: 20px 10px 5px 10px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        float: right;
+        text-align: center;
+        -ms-text-kashida-space: 1px;
+        /*font-size: 3em;*/
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    #hide-btn:hover {
+        background-color: dodgerblue;
+        border: 2px solid white;
+        /* dodgerblue */
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #show-btn {
+        width: auto;
+        height: auto;
+        /* border-radius: 30px; */
+        border: 2px solid white;
+        background-color: black;
+        content: "Show";
+        color: white;
+        display: inline-flex;
+        position: inline-start;
+        vertical-align: middle;
+        margin: 20px 10px 5px 10px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        float: left;
+        text-align: center;
+        -ms-text-kashida-space: 1px;
+        /*font-size: 3em;*/
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    #show-btn:hover {
+        background-color: dodgerblue;
+        border: 2px solid white;
+        /* dodgerblue */
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    h2 {
+        text-shadow: 3px 2px darkslategrey;
+        text-align: center;
+        -ms-text-kashida-space: 3px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: dodgerblue;
+        font-weight: bold;
+    }
+    
+    h3 {
+        color: white;
+    }
+    
+    h4 {
+        color: white;
+        text-align: center;
+    }
+    
+    .controls-container {
+        padding: 4px;
+        border: 5px solid gold;
+        width: auto;
+    }
+    
+    .controls_container #light-controls {
+        margin-left: 80px;
+        height: 100px;
+        max-width: fit-content;
+        text-align: center;
+    }
+    
+    .controls-container #lighting-panel {
+        text-align: center;
+        background-image: url("mesh.png");
+        background-repeat: round;
+        background-size: contain;
+        /* display: inline; */
+    }
+    
+    #theme-control-group {
+        background-color: transparent;
+        display: inline-flex;
+        position: inherit;
+        margin-block: 2px;
+    }
+    
+    .w3-container-theme-wrapper {
+        margin-left: 5px;
+    }
+    
+    .w3-container-lights {
+        text-align: center;
+        border: 10px solid gold;
+        max-width: fit-content;
+        display: inline-flex;
+    }
+    
+    .lights {
+        display: inline-flex;
+        -webkit-box-flex: inherit;
+        margin: 15px;
+        width: auto;
+        height: auto;
+        /*width: max-content;*/
+        text-align: center;
+        vertical-align: middle;
+        float: unset;
+    }
+    
+    .lights#light1 {
+        margin-left: auto;
+    }
+    
+    img.clickable-light-button {
+        width: auto;
+        height: auto;
+    }
+    
+    img.clickable-light-button:hover {
+        border: 2.5px solid dodgerblue;
+        box-shadow: #000;
+    }
+    
+    #firstLabel,
+    #secondLabel,
+    #thirdLabel,
+    #fourthLabel {
+        display: none;
+    }
+    
+    .status-Label {
+        display: inline-flex;
+        visibility: visible;
+        text-size-adjust: auto;
+        color: gold;
+        background-color: midnightblue;
+        padding: 1px;
+        margin: 1px 1px 1px 1px;
+        border: solid 1px white;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        z-index: 999;
+    }
+    
+    #black-theme-button1,
+    #white-theme-button2,
+    #red-theme-button3,
+    #lime-theme-button4,
+    #default-theme-button5 :hover {
+        font-weight: bolder;
+        letter-spacing: 4px;
+        text-align: center;
+        /* background-color: rgb(25, 49, 187); */
+        /* blue */
+        color: white;
+    }
+    
+    #black-theme-button1 {
+        /* black theme */
+        position: inline-start;
+        display: inside;
+        padding: 3px;
+        margin: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: lightgray;
+        color: black;
+        content: "button";
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        float: left;
+    }
+    
+    #white-theme-button2 {
+        /* white theme */
+        position: inline-block;
+        display: inside;
+        padding: 3px;
+        margin: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: lightGray;
+        color: black;
+        content: "button";
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        float: left;
+    }
+    
+    #red-theme-button3 {
+        /* red theme */
+        /* black theme */
+        /*position: inline-end;*/
+        display: block;
+        padding: 3px;
+        margin: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: lightgray;
+        color: black;
+        content: "button";
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        float: left;
+    }
+    
+    #lime-theme-button4 {
+        /* lime theme */
+        /*position: inline-start;*/
+        box-shadow: 2px;
+        display: block;
+        padding: 3px;
+        margin: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: lightgray;
+        color: black;
+        content: "button";
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        float: left;
+    }
+    
+    #default-theme-button5 {
+        /* original default theme */
+        position: inline-start;
+        display: inside;
+        padding: 3px;
+        margin: 5px;
+        width: 100px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: lightgray;
+        color: black;
+        content: "button";
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        float: left;
+    }
+    
+    .version_container {
+        /* version control container */
+        margin-top: 5px;
+        width: auto;
+        float: right;
+        margin-bottom: 10px;
+        padding: 1px;
+    }
+    
+    h5 {
+        /* version control */
+        text-align: right;
+        border: 2px solid dodgerblue;
+        width: auto;
+        height: auto;
+        color: white;
+    }
+    
+    #firstLabel,
+    #secondLabel,
+    #thirdLabel,
+    #fourthLabel {
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+    }
+    
+    #build_config {
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: auto;
+    }
+    
+    #build_config>p#build-info {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .info {
+        text-align: center;
+        font-size: 13px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    #panel-visibility-control-group {
+        margin-block: 10px;
+    }

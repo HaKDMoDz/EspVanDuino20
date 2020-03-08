@@ -1,0 +1,160 @@
+<!--webpage designed by HaKDMoDz™-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>EspVanDuino</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="myscript.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- banner heading for page -->
+    <div class="banner-container">
+        <img src="webAppBanner.png" id="banner"></img>
+    </div>
+
+    <div class="title-banner-box">
+        <hr class="new4"></hr>
+        <h2 class="btn-btn-info">Lighting Control</h2>
+    </div>
+
+    <!-- collapsible lighting panel -->
+    <div id="w3-container-lights" class="collapse">
+        <div class="controls-container" id="light-controls">
+            <div id="lighting-panel">
+                <div id="light1" class="lights">
+                    <img src="wallSwitch-134x80-off.jpg" id="lite1" class="clickable-light-button" onclick="changeLight1();playSound2()">
+                    <audio id="clickSound2">
+                        <source src="Click2.wav"></source>
+                        <source src="Click2.mp3"></source>
+                            Audio not supported.
+                        </audio>
+                    </img>
+                    <label id="firstLabel" class="status-Label"></label>
+                    <div class="switchLabelContainer">
+                        <!-- <label id="firstLabel" class="status-Label"></label> -->
+                    </div>
+                </div>
+                <div id="light2" class="lights">
+                    <img src="wallSwitch-134x80-off.jpg" id="lite2" class="clickable-light-button" onclick="changeLight2(); playSound2()">
+                    <audio id="clickSound2">
+                        <source src="Click2.wav"></source>
+                        <source src="Click2.mp3"></source>
+                        Audio not supported.
+                    </audio>
+                    </img>
+                    <div class="switchLabelContainer">
+                        <label id="secondLabel" class="status-Label"></label>
+                    </div>
+                </div>
+                <div id="light3" class="lights">
+                    <img src="wallSwitch-134x80-off.jpg" id="lite3" class="clickable-light-button" onclick="changeLight3(); playSound2()">
+                    <audio id="clickSound2">
+                        <source src="Click2.wav"></source>
+                        <source src="Click2.mp3"></source>
+                        Audio not supported.
+                    </audio>
+                    </img>
+                    <div class="switchLabelContainer">
+                        <label id="thirdLabel" class="status-Label"></label>
+                    </div>
+                </div>
+                <div id="light4" class="lights">
+                    <img src="wallSwitch-134x80-off.jpg" id="lite4" class="clickable-light-button" onclick="changeLight4(); playSound2()">
+                    <audio id="clickSound2">
+                        <source src="Click2.wav"></source>
+                        <source src="Click2.mp3"></source>
+                        Audio not supported.
+                    </audio>
+                    </img>
+                    <div class="switchLabelContainer">
+                        <label id="fourthLabel" class="status-Label"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--  Theme section -- collapsible  -->
+    <div id="theme-control-group">
+        <div class="w3-container-theme-wrapper">
+            <!-- end region toggle switch -->
+            <br> &nbsp;
+            <!-- audio button click event-->
+            <div id="themeWrapper">
+                <div id="theme-Content">
+                    <!--black theme-->
+                    <button id="black-theme-button1" class="audio" onclick="playSound(); blackTheme()" type="button">Black
+                <audio id="clickSound">
+                    <source src="pushButtonS1.wav"></source>
+                    <source src="pushButtonS1.mp3"></source>
+                    Audio not supported.
+                </audio>
+                </button>
+                    <!--white theme-->
+                    <button id="white-theme-button2" class="audio" onclick="playSound(); whiteTheme()" type="button">White
+                    <audio id="clickSound">
+                        <source src="pushButtonS1.mp3"></source>
+                        <source src="pushButtonS1.wav"></source>
+                        Audio not supported.
+                    </audio>
+                    </button>
+                    <!--red theme-->
+                    <button id="red-theme-button3" class="audio" onclick="playSound(); redTheme()" type="button">Red
+                <audio id="clickSound">
+                    <source src="pushButtonS1.wav"></source>
+                    <source src="pushButtonS1.mp3"></source>                    
+                    Audio not supported.
+                </audio>
+                </button>
+                    <!--lime theme-->
+                    <button id="lime-theme-button4" class="audio" onclick="playSound(); limeTheme()" type="button">Lime
+                <audio id="clickSound">
+                    <source src="pushButtonS1.mp3"></source>
+                    <source src="pushButtonS1.wav"></source>
+                    Audio not supported.
+                </audio>
+                </button>
+                    <!--Default theme-->
+                    <button id="default-theme-button5" class="audio" onclick="playSound(); defaultTheme()" type="button">Default
+                        <audio id="clickSound">
+                            <source src="pushButtonS1.mp3"></source>
+                            <source src="pushButtonS1.wav"></source>
+                            Audio not supported.
+                        </audio>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="panel-visibility-control-group">
+        <!-- floating show-hide buttons -->
+        <button id="show-btn" onclick="showPanel()" style="display:none;">Show Panel</button>
+        <button id="hide-btn" onclick="hidePanel()">Hide Panel</button>
+        <!-- end floating buttons -->
+    </div>
+
+    <div id="rst-buildnfo-misc-group">
+        <button id="reset-lights-button" onclick="resetLights()">Reset</button>
+        <button id="buildInfo" onclick="getBuild()">Get Version</button>
+    </div>
+
+    <div id="build_config ">
+        <p id="build-info" style="color:white; font-size:8px;"><var build></var><br><var ver></var></p>
+    </div>
+
+</body>
+
+
+</html>
