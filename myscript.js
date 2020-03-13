@@ -135,8 +135,8 @@ function whiteTheme() {
     var audio = $("#clickSound")[0];
     playSound();
     $('body').css('background-color', 'white');
-    $('body').css('borderColor', 'white');
     $('controls-container').css('borderColor: white');
+    $('body').css('border: black 2px solid');
 
     //alert("White Theme Selected!");
     console.log("White Selected !");

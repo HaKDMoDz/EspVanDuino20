@@ -186,6 +186,65 @@
         /* display: inline; */
     }
     
+    input[type=checkbox].toggle-switch {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width: 6em;
+        height: 3em;
+        border-radius: 3em;
+        background-color: #ddd;
+        outline: 0;
+        cursor: pointer;
+        transition: background-color 0.09s ease-in-out;
+        position: relative;
+    }
+    
+    input[type=checkbox].toggle-switch:checked {
+        background-color: #3af;
+    }
+    
+    input[type=checkbox].toggle-switch::after {
+        content: '';
+        width: 3em;
+        height: 3em;
+        background-color: white;
+        border-radius: 3em;
+        position: absolute;
+        transform: scale(0.7);
+        left: 0;
+        transition: left 0.09s ease-in-out;
+        box-shadow: 0 0.1em rgba(0, 0, 0, 0.5);
+    }
+    
+    input[type=checkbox].toggle-switch:checked::after {
+        left: 3em;
+    }
+    
+    #toggle-left-slider-container.keep-left-parent {
+        margin-left: 1px;
+        padding-left: 1px;
+        display: -webkit-inline-box;
+        position: absolute;
+        float: left;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+        z-index: 1;
+    }
+    
+    #left-theme-controls-container.keep-left-parent {
+        margin-left: 1px;
+        padding-left: 1px;
+        display: inherit;
+        position: absolute;
+        float: left;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+        margin-top: 2px;
+        padding-top: 2px;
+        z-index: 2;
+    }
+    
     #theme-control-group {
         background-color: transparent;
         display: inline-flex;

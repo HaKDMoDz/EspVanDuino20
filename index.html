@@ -84,56 +84,73 @@
         </div>
     </div>
     </div>
-
-
-    <!--  Theme section -- collapsible  -->
-    <div id="theme-control-group">
-        <div class="w3-container-theme-wrapper">
-            <!-- end region toggle switch -->
-            <br> &nbsp;
-            <!-- audio button click event-->
-            <div id="themeWrapper">
-                <div id="theme-Content">
-                    <!--black theme-->
-                    <button id="black-theme-button1" class="audio" onclick="playSound(); blackTheme()" type="button">Black
+    <!--
+        place containing slide toggle switch control elements
+    -->
+    <div id="toggle-left-slider-container" class="keep-left-parent">
+        <div id="toggle-holder" class="toggle-container">
+            <p>
+                <input type="checkbox" class="toggle-switch">
+                <input type="checkbox" class="toggle-switch" checked>
+                <br>
+                <input type="checkbox" class="toggle-switch" checked>
+                <input type="checkbox" class="toggle-switch">
+                <br>
+            </p>
+        </div>
+    </div>
+    <div id="left-theme-controls-container" class="keep-left-parent">
+        <!--  Theme section -- collapsible  -->
+        <div id="theme-control-group">
+            <div class="w3-container-theme-wrapper">
+                <!-- end region toggle switch -->
+                <br> &nbsp;
+                <!-- audio button click event-->
+                <div id="themeWrapper">
+                    <div id="theme-Content">
+                        <!--black theme-->
+                        <button id="black-theme-button1" class="audio" onclick="playSound(); blackTheme()" type="button">Black
                 <audio id="clickSound">
                     <source src="pushButtonS1.wav"></source>
                     <source src="pushButtonS1.mp3"></source>
                     Audio not supported.
                 </audio>
-                </button>
-                    <!--white theme-->
-                    <button id="white-theme-button2" class="audio" onclick="playSound(); whiteTheme()" type="button">White
+            </button>
+                        <!--
+                            * white theme
+                            <button id="white-theme-button2" class="audio" onclick="playSound(); whiteTheme()" type="button">White
                     <audio id="clickSound">
                         <source src="pushButtonS1.mp3"></source>
                         <source src="pushButtonS1.wav"></source>
                         Audio not supported.
                     </audio>
                     </button>
-                    <!--red theme-->
-                    <button id="red-theme-button3" class="audio" onclick="playSound(); redTheme()" type="button">Red
+                            * red theme
+                        <button id="red-theme-button3" class="audio" onclick="playSound(); redTheme()" type="button">Red
                 <audio id="clickSound">
                     <source src="pushButtonS1.wav"></source>
-                    <source src="pushButtonS1.mp3"></source>                    
-                    Audio not supported.
-                </audio>
-                </button>
-                    <!--lime theme-->
-                    <button id="lime-theme-button4" class="audio" onclick="playSound(); limeTheme()" type="button">Lime
-                <audio id="clickSound">
                     <source src="pushButtonS1.mp3"></source>
-                    <source src="pushButtonS1.wav"></source>
                     Audio not supported.
                 </audio>
                 </button>
-                    <!--Default theme-->
-                    <button id="default-theme-button5" class="audio" onclick="playSound(); defaultTheme()" type="button">Default
+                            * lime theme
+                    <button id="lime-theme-button4" class="audio" onclick="playSound(); limeTheme()" type="button">Lime
+                        <audio id="clickSound">
+                        <source src="pushButtonS1.mp3"></source>
+                        <source src="pushButtonS1.wav"></source>
+                            Audio not supported.
+                        </audio>
+                    </button>
+                            * Default theme
+                        <button id="default-theme-button5" class="audio" onclick="playSound(); defaultTheme()" type="button">Default
                         <audio id="clickSound">
                             <source src="pushButtonS1.mp3"></source>
                             <source src="pushButtonS1.wav"></source>
                             Audio not supported.
                         </audio>
                         </button>
+-->
+                    </div>
                 </div>
             </div>
         </div>
